@@ -1,0 +1,80 @@
+body {
+    background-image: url(/img/img-home/background-home.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main-wrapper {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    border-radius: 10px;
+    grid-template-areas: 
+    'header header buttonblock buttonblock buttonblock buttonblock';
+
+}
+
+
+.header-1 {
+    color: white;
+    background-color: rgb(0, 4, 255, 0.2);
+    border: 2px solid white;
+    font-size: 80px;
+    text-align: center;
+    border-radius: 10px;
+    grid-area: header;
+}
+
+.btn-div {
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    grid-area: buttonblock;
+}
+li {
+    color: white;
+    text-align: center;
+}
+
+ul {
+    color: white;
+    text-align: center;
+}
+
+.buttons {
+    color: white;
+    background-color: rgb(0, 4, 255, 0.2);
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 40px;
+    margin: auto;
+    grid-area: btn;
+}
+
+.button:hover {
+    background-color: blue;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-image: url(/img/img-home/background-home.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .main-wrapper {
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        'header header header header header '
+        'buttonblock buttonblock buttonblock buttonblock buttonblock '
+
+    }
+}
